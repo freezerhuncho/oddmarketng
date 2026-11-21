@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OddMarketNG | Global Football</title>
+<style>
+:root {
+  --bg:#090d0c;
+  --panel:#111917;
+  --green:#18d887;
+  --muted:#89958f;
+  --white:#f4f8f5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--white);
+  font-family:Arial,sans-serif;
+}
+header{
+  padding:20px 6%;display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid #202b26;
+}
+.logo{font-size:25px;font-weight:900;letter-spacing:-1px}
+.logo span{color:var(--green)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#b8c4bd;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--green)}
+.hero{padding:65px 6% 45px;background:
+linear-gradient(110deg,#10241b,#090d0c 75%)}
+.tag{color:var(--green);font-size:12px;font-weight:bold;
+letter-spacing:2px}
+h1{font-size:clamp(36px,6vw,64px);max-width:720px;
+line-height:1.05;margin:18px 0}
+.hero p{color:#a9b7af;line-height:1.7;max-width:560px}
+.btn{display:inline-block;background:var(--green);color:#07130d;
+padding:13px 20px;border-radius:6px;text-decoration:none;
+font-weight:bold;margin-top:12px}
+main{padding:35px 6%}
+.section-title{display:flex;justify-content:space-between;
+align-items:center;margin-bottom:18px}
+.section-title h2{font-size:22px}
+.section-title span{color:var(--green);font-size:12px}
+.matches{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{background:var(--panel);border:1px solid #24312b;
+padding:19px;border-radius:10px}
+.league{font-size:12px;color:var(--muted)}
+.teams{display:flex;justify-content:space-between;
+align-items:center;margin:24px 0;font-weight:bold}
+.vs{color:var(--green);font-size:12px}
+.status{color:#e9c46a;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.feature{background:var(--panel);padding:22px;
+border-radius:10px;border:1px solid #24312b}
+.feature h3{margin-top:0}
+.feature p{color:var(--muted);line-height:1.6;font-size:14px}
+footer{border-top:1px solid #202b26;padding:28px 6%;
+color:var(--muted);font-size:13px;margin-top:30px}
+@media(max-width:700px){
+ header{align-items:flex-start;gap:18px;flex-direction:column}
+ nav{gap:15px}
+ .matches,.grid{grid-template-columns:1fr}
+ .hero{padding-top:45px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ODD<span>MARKET</span>NG</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#scores">Live Scores</a>
+    <a href="#fixtures">Fixtures</a>
+    <a href="#news">News</a>
+    <a href="#analysis">Analysis</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="tag">THE GLOBAL FOOTBALL HUB</div>
+  <h1>Football never stops. Neither do we.</h1>
+  <p>
+    Your destination for football news, match updates,
+    fixtures, results and intelligent sports analysis.
+    Follow the game. Understand the game.
+  </p>
+  <a class="btn" href="#fixtures">Explore Matches →</a>
+</section>
+
+<main>
+<section id="scores">
+  <div class="section-title">
+    <h2>Match Centre</h2>
+    <span>DEMO DATA</span>
+  </div>
+  <div class="matches">
+    <div class="card">
+      <div class="league">ENGLISH PREMIER LEAGUE</div>
+      <div class="teams"><span>Man United</span><span class="vs">VS</span><span>Arsenal</span></div>
+      <div class="status">Sample fixture · Not live</div>
+    </div>
+    <div class="card">
+      <div class="league">SPANISH LA LIGA</div>
+      <div class="teams"><span>Barcelona</span><span class="vs">VS</span><span>Real Madrid</span></div>
+      <div class="status">Sample fixture · Not live</div>
+    </div>
+    <div class="card">
+      <div class="league">ITALIAN SERIE A</div>
+      <div class="teams"><span>Inter</span><span class="vs">VS</span><span>Juventus</span></div>
+      <div class="status">Sample fixture · Not live</div>
+    </div>
+  </div>
+</section>
+
+<section id="fixtures" style="margin-top:45px">
+  <div class="section-title">
+    <h2>Football Central</h2>
+    <span>MORE COMING SOON</span>
+  </div>
+  <div class="grid">
+    <div class="feature">
+      <h3>Fixtures & Results</h3>
+      <p>Follow upcoming matches, kick-off times and completed results from competitions around the world.</p>
+    </div>
+    <div class="feature" id="news">
+      <h3>Football News</h3>
+      <p>Stay informed with football stories, transfer updates and important developments.</p>
+    </div>
+    <div class="feature" id="analysis">
+      <h3>Match Analysis</h3>
+      <p>Explore match previews, tactical discussions, statistics and informed opinions.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">ODD<span>MARKET</span>NG</div>
+  <p>Global football. One destination.</p>
+  <p>© 2026 OddMarketNG. All rights reserved.</p>
+  <p>Match information on this first version is illustrative demo content.</p>
+</footer>
+</body>
+</html>
