@@ -1,145 +1,38 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OddMarketNG | Global Football</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07110f"><meta name="description" content="OddMarketNG — global football news, fixtures, results and analysis.">
+<title>OddMarketNG | Global Football Desk</title>
 <style>
-:root {
-  --bg:#090d0c;
-  --panel:#111917;
-  --green:#18d887;
-  --muted:#89958f;
-  --white:#f4f8f5;
-}
-*{box-sizing:border-box}
-body{
-  margin:0;background:var(--bg);color:var(--white);
-  font-family:Arial,sans-serif;
-}
-header{
-  padding:20px 6%;display:flex;justify-content:space-between;
-  align-items:center;border-bottom:1px solid #202b26;
-}
-.logo{font-size:25px;font-weight:900;letter-spacing:-1px}
-.logo span{color:var(--green)}
-nav{display:flex;gap:22px;flex-wrap:wrap}
-nav a{color:#b8c4bd;text-decoration:none;font-size:14px}
-nav a:hover{color:var(--green)}
-.hero{padding:65px 6% 45px;background:
-linear-gradient(110deg,#10241b,#090d0c 75%)}
-.tag{color:var(--green);font-size:12px;font-weight:bold;
-letter-spacing:2px}
-h1{font-size:clamp(36px,6vw,64px);max-width:720px;
-line-height:1.05;margin:18px 0}
-.hero p{color:#a9b7af;line-height:1.7;max-width:560px}
-.btn{display:inline-block;background:var(--green);color:#07130d;
-padding:13px 20px;border-radius:6px;text-decoration:none;
-font-weight:bold;margin-top:12px}
-main{padding:35px 6%}
-.section-title{display:flex;justify-content:space-between;
-align-items:center;margin-bottom:18px}
-.section-title h2{font-size:22px}
-.section-title span{color:var(--green);font-size:12px}
-.matches{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.card{background:var(--panel);border:1px solid #24312b;
-padding:19px;border-radius:10px}
-.league{font-size:12px;color:var(--muted)}
-.teams{display:flex;justify-content:space-between;
-align-items:center;margin:24px 0;font-weight:bold}
-.vs{color:var(--green);font-size:12px}
-.status{color:#e9c46a;font-size:11px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.feature{background:var(--panel);padding:22px;
-border-radius:10px;border:1px solid #24312b}
-.feature h3{margin-top:0}
-.feature p{color:var(--muted);line-height:1.6;font-size:14px}
-footer{border-top:1px solid #202b26;padding:28px 6%;
-color:var(--muted);font-size:13px;margin-top:30px}
-@media(max-width:700px){
- header{align-items:flex-start;gap:18px;flex-direction:column}
- nav{gap:15px}
- .matches,.grid{grid-template-columns:1fr}
- .hero{padding-top:45px}
-}
-</style>
-</head>
+:root{--bg:#07110f;--panel:#0e1a16;--panel2:#14251e;--line:#243a30;--green:#19d38a;--white:#f3f7f4;--muted:#9aaca3;--gold:#e8bd65}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.top{background:#050b09;color:var(--muted);font-size:11px;padding:7px 0;border-bottom:1px solid var(--line)}.top .wrap{display:flex;justify-content:space-between}
+header{position:sticky;top:0;z-index:5;background:#08120fee;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:25px;font-weight:950;letter-spacing:-1px}.logo span{color:var(--green)}nav{display:flex;gap:23px;color:#c3d0c8;font-size:13px}nav a:hover{color:var(--green)}.menu{display:none;background:var(--panel);border:1px solid var(--line);color:white;padding:8px;border-radius:7px}
+.ticker{background:#0b1712;border-bottom:1px solid var(--line);padding:9px 0;color:var(--muted);font-size:12px}.ticker b{color:var(--green);margin-right:12px;letter-spacing:1px}
+.hero{display:grid;grid-template-columns:1.5fr .9fr;gap:16px;padding:28px 0}.lead{min-height:355px;border:1px solid #28513e;border-radius:13px;display:flex;align-items:end;background:radial-gradient(ellipse at 75% 15%,#28583f,#10251b 48%,#09130f 80%);overflow:hidden}.leadin{padding:30px;max-width:700px}.tag{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.lead h1{font-size:clamp(32px,4.4vw,51px);line-height:1.04;letter-spacing:-1.8px;margin:14px 0}.lead p{color:#c0cec6;max-width:560px}.btn{display:inline-block;background:var(--green);color:#04120b;font-weight:800;padding:11px 16px;border:0;border-radius:7px;cursor:pointer}.side{display:grid;gap:11px}.side article{display:grid;grid-template-columns:88px 1fr;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px}.art{height:76px;border-radius:7px;background:linear-gradient(135deg,#315d45,#14291f);display:grid;place-items:center;color:#d4e8dc;font-weight:900}.side small,.muted{font-size:11px;color:var(--muted)}.side h3{font-size:14px;line-height:1.3;margin:4px 0}
+section{padding:25px 0}.heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.eyebrow{font-size:10px;color:var(--green);font-weight:900;letter-spacing:2px;text-transform:uppercase}h2{font-size:23px;line-height:1.2;margin:4px 0}.demo{font-size:10px;color:var(--gold);font-weight:800;letter-spacing:1px}
+.cols{display:grid;grid-template-columns:1.35fr .8fr;gap:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}.panelhead{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}.league{padding:9px 16px 0;color:var(--muted);font-size:10px;letter-spacing:1px;text-transform:uppercase}.match{display:grid;grid-template-columns:1fr 70px 1fr;gap:8px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);font-weight:700;font-size:13px}.match span:nth-child(2){text-align:center;color:var(--green)}.match span:last-child{text-align:right}.notice{margin:12px;padding:10px;background:#211d12;border:1px solid #594a2a;border-radius:7px;color:#d9c58f;font-size:11px}.quickgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:13px}.quick{background:var(--panel2);border:1px solid var(--line);padding:13px;border-radius:8px}.quick b{display:block;font-size:13px}.quick small{color:var(--muted)}
+.newsgrid{display:grid;grid-template-columns:1.3fr .8fr;gap:16px}.newslist{display:grid;gap:10px}.news{display:grid;grid-template-columns:115px 1fr;gap:13px;padding:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.news .art{height:105px}.news h3{font-size:14px;line-height:1.3;margin:5px 0}.news p{font-size:11px;color:var(--muted);margin:0 0 5px}.label{font-size:10px;color:var(--green);font-weight:900;letter-spacing:1px}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}th{font-size:10px;color:var(--muted);text-transform:uppercase}td:last-child,th:last-child{text-align:right}.tablefoot{padding:10px 12px;color:var(--muted);font-size:10px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.feature{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.feature b{color:var(--green);font-size:10px}.feature h3{font-size:14px;line-height:1.3}.feature p{font-size:11px;color:var(--muted);margin-bottom:0}
+.signup{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px;background:linear-gradient(110deg,#153626,#0d1b15);border:1px solid #28513e;border-radius:12px}.signup h2{margin:0 0 4px}.signup p{margin:0;color:var(--muted);font-size:12px}.signup form{display:flex;gap:7px;min-width:300px}.signup input{min-width:0;flex:1;background:#07110f;border:1px solid var(--line);border-radius:7px;padding:10px;color:white}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:17px}
+@media(max-width:800px){.hero,.cols,.newsgrid{grid-template-columns:1fr}.menu{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:#08120f;padding:18px;flex-direction:column;border-bottom:1px solid var(--line)}nav.open{display:flex}.cards{grid-template-columns:1fr 1fr}.signup{align-items:flex-start;flex-direction:column}.signup form{width:100%}}
+@media(max-width:500px){.wrap{width:calc(100% - 22px)}.nav{height:64px}.logo{font-size:22px}nav{top:64px}.lead{min-height:330px}.leadin{padding:20px}.lead h1{font-size:35px}.side article{grid-template-columns:78px 1fr}.art{height:70px}.news{grid-template-columns:90px 1fr;gap:9px}.news .art{height:95px}.cards{grid-template-columns:1fr}.match{padding:12px;font-size:12px}}
+</style></head>
 <body>
-<header>
-  <div class="logo">ODD<span>MARKET</span>NG</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#scores">Live Scores</a>
-    <a href="#fixtures">Fixtures</a>
-    <a href="#news">News</a>
-    <a href="#analysis">Analysis</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="tag">THE GLOBAL FOOTBALL HUB</div>
-  <h1>Football never stops. Neither do we.</h1>
-  <p>
-    Your destination for football news, match updates,
-    fixtures, results and intelligent sports analysis.
-    Follow the game. Understand the game.
-  </p>
-  <a class="btn" href="#fixtures">Explore Matches →</a>
-</section>
-
-<main>
-<section id="scores">
-  <div class="section-title">
-    <h2>Match Centre</h2>
-    <span>DEMO DATA</span>
-  </div>
-  <div class="matches">
-    <div class="card">
-      <div class="league">ENGLISH PREMIER LEAGUE</div>
-      <div class="teams"><span>Man United</span><span class="vs">VS</span><span>Arsenal</span></div>
-      <div class="status">Sample fixture · Not live</div>
-    </div>
-    <div class="card">
-      <div class="league">SPANISH LA LIGA</div>
-      <div class="teams"><span>Barcelona</span><span class="vs">VS</span><span>Real Madrid</span></div>
-      <div class="status">Sample fixture · Not live</div>
-    </div>
-    <div class="card">
-      <div class="league">ITALIAN SERIE A</div>
-      <div class="teams"><span>Inter</span><span class="vs">VS</span><span>Juventus</span></div>
-      <div class="status">Sample fixture · Not live</div>
-    </div>
-  </div>
-</section>
-
-<section id="fixtures" style="margin-top:45px">
-  <div class="section-title">
-    <h2>Football Central</h2>
-    <span>MORE COMING SOON</span>
-  </div>
-  <div class="grid">
-    <div class="feature">
-      <h3>Fixtures & Results</h3>
-      <p>Follow upcoming matches, kick-off times and completed results from competitions around the world.</p>
-    </div>
-    <div class="feature" id="news">
-      <h3>Football News</h3>
-      <p>Stay informed with football stories, transfer updates and important developments.</p>
-    </div>
-    <div class="feature" id="analysis">
-      <h3>Match Analysis</h3>
-      <p>Explore match previews, tactical discussions, statistics and informed opinions.</p>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="logo">ODD<span>MARKET</span>NG</div>
-  <p>Global football. One destination.</p>
-  <p>© 2026 OddMarketNG. All rights reserved.</p>
-  <p>Match information on this first version is illustrative demo content.</p>
-</footer>
-</body>
-</html>
+<div class="top"><div class="wrap"><span>THE GLOBAL FOOTBALL DESK</span><span>Football first · Global perspective</span></div></div>
+<header><div class="wrap nav"><a class="logo" href="#">ODD<span>MARKET</span>NG</a><nav id="nav"><a href="#home">Home</a><a href="#scores">Scores</a><a href="#fixtures">Fixtures</a><a href="#news">News</a><a href="#tables">Tables</a><a href="#analysis">Analysis</a></nav><button class="menu" id="menu">☰</button></div></header>
+<div class="ticker"><div class="wrap"><b>ODDMARKET BRIEFING</b> Football news, match coverage and informed analysis — all in one place.</div></div>
+<main class="wrap" id="home">
+<div class="hero"><article class="lead"><div class="leadin"><div class="tag">The global football hub</div><h1>Football never stops.<br>Neither do we.</h1><p>Your destination for football news, match updates, fixtures, results and intelligent sports analysis. Follow the game. Understand the game.</p><a class="btn" href="#scores">Explore match centre →</a><p class="muted">ODDMARKETNG · FOOTBALL, WITH CONTEXT</p></div></article>
+<div class="side"><article><div class="art">01</div><div><small>THE BIG PICTURE</small><h3>What makes a football team difficult to break down?</h3><small>Analysis · 5 min read</small></div></article><article><div class="art">02</div><div><small>TACTICAL NOTEBOOK</small><h3>How pressing shapes the modern game</h3><small>Explainer · 4 min read</small></div></article><article><div class="art">03</div><div><small>TRANSFER WATCH</small><h3>What to look for beyond a transfer rumour</h3><small>Guide · 3 min read</small></div></article></div></div>
+<section id="scores"><div class="heading"><div><div class="eyebrow">Follow every moment</div><h2>Match Centre</h2></div><span class="demo">DEMO CONTENT · NOT LIVE SCORES</span></div><div class="cols"><div class="panel"><div class="panelhead"><b>Featured match cards</b><span class="muted">Sample layout</span></div><div class="league">English Premier League · Example</div><div class="match"><span>Home team</span><span>VS</span><span>Away team</span></div><div class="league">La Liga · Example</div><div class="match"><span>Home team</span><span>VS</span><span>Away team</span></div><div class="league">Serie A · Example</div><div class="match"><span>Home team</span><span>VS</span><span>Away team</span></div><div class="notice">These are demonstration cards, not real fixtures or live results. We will connect a licensed football data API before publishing live match information.</div></div><aside class="panel"><div class="panelhead"><b>Explore football</b><span class="muted">Quick access</span></div><div class="quickgrid"><a class="quick" href="#fixtures"><b>Fixtures</b><small>Upcoming matches →</small></a><a class="quick" href="#fixtures"><b>Results</b><small>Recent scorelines →</small></a><a class="quick" href="#tables"><b>League tables</b><small>Standings and form →</small></a><a class="quick" href="#analysis"><b>Analysis</b><small>Understand the game →</small></a></div></aside></div></section>
+<section id="fixtures"><div class="heading"><div><div class="eyebrow">Plan your viewing</div><h2>Fixtures & results</h2></div><span class="demo">SAMPLE STRUCTURE</span></div><div class="panel"><div class="panelhead"><b>Competition schedule</b><span class="muted">API connection coming later</span></div><table><thead><tr><th>Competition</th><th>Coverage</th><th>Status</th></tr></thead><tbody><tr><td>Premier League</td><td>Fixtures · Results</td><td>Coming soon</td></tr><tr><td>La Liga</td><td>Fixtures · Results</td><td>Coming soon</td></tr><tr><td>Serie A</td><td>Fixtures · Results</td><td>Coming soon</td></tr><tr><td>Bundesliga</td><td>Fixtures · Results</td><td>Coming soon</td></tr><tr><td>UEFA Champions League</td><td>Fixtures · Results</td><td>Coming soon</td></tr></tbody></table></div></section>
+<section id="news"><div class="heading"><div><div class="eyebrow">The latest perspective</div><h2>News & features</h2></div></div><div class="newsgrid"><div class="newslist"><article class="news"><div class="art">⚽</div><div><div class="label">FOOTBALL EXPLAINED</div><h3>Beyond the scoreline: how to read a team's performance</h3><p>Possession, territory, chances and defensive shape can tell a deeper story than the final score.</p><span class="muted">OddMarketNG Editorial · Feature</span></div></article><article class="news"><div class="art">▤</div><div><div class="label">TACTICS</div><h3>Three questions to ask before judging a manager's system</h3><p>Look at a team's structure in and out of possession before drawing conclusions.</p><span class="muted">OddMarketNG Editorial · Explainer</span></div></article><article class="news"><div class="art">◎</div><div><div class="label">TRANSFER GUIDE</div><h3>How to separate confirmed transfer news from speculation</h3><p>Understand the difference between official announcements, reliable reporting and rumours.</p><span class="muted">OddMarketNG Editorial · Guide</span></div></article></div><aside class="panel" id="tables"><div class="panelhead"><b>League table preview</b><span class="demo">PLACEHOLDER</span></div><table><thead><tr><th>Club</th><th>MP</th><th>Pts</th></tr></thead><tbody><tr><td>1. Club name</td><td>—</td><td>—</td></tr><tr><td>2. Club name</td><td>—</td><td>—</td></tr><tr><td>3. Club name</td><td>—</td><td>—</td></tr><tr><td>4. Club name</td><td>—</td><td>—</td></tr><tr><td>5. Club name</td><td>—</td><td>—</td></tr></tbody></table><div class="tablefoot">Standings will populate when a football data provider is connected.</div></aside></div></section>
+<section id="analysis"><div class="heading"><div><div class="eyebrow">Read the game better</div><h2>Analysis desk</h2></div></div><div class="cards"><article class="feature"><b>01 / TACTICS</b><h3>Shape, space and pressing: the basics of tactical analysis</h3><p>A clear guide to the ideas that influence how teams create and prevent chances.</p></article><article class="feature"><b>02 / DATA</b><h3>Why expected goals are useful — and what they cannot tell you</h3><p>Use performance data as context, not as a guaranteed prediction.</p></article><article class="feature"><b>03 / MATCH PREVIEW</b><h3>Build a better match preview with evidence, not hype</h3><p>Consider form, availability, style matchups and uncertainty before kickoff.</p></article></div></section>
+<section><div class="signup"><div><h2>Get the game in perspective.</h2><p>Newsletter sign-up will be activated when user accounts and email services are added.</p></div><form onsubmit="event.preventDefault();alert('Newsletter sign-up is not active yet. It will be added with the account system.');"><input type="email" placeholder="Email address" required><button class="btn">Coming soon</button></form></div></section>
+</main><footer><div class="wrap foot"><div><a class="logo" href="#">ODD<span>MARKET</span>NG</a><p>Global football coverage. Clear analysis. Better context.</p><span>© <span id="year"></span> OddMarketNG. All rights reserved.</span></div><div class="footlinks"><a href="#scores">Match Centre</a><a href="#news">News</a><a href="#analysis">Analysis</a><a href="#home">Back to top ↑</a></div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('menu').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));</script>
+</body></html>
